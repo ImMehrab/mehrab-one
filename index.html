@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+
+    <!-- ! bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- ! bootstrap -->
+    <!-- ! owlCarousel  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <!-- ! owlCarousel  -->
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ! start header -->
+    <header>
+        <div class="navbar">
+            <div class="navbar-title">
+                <p class="h3">gorup <span>A</span> </p>
+            </div>
+            <div class="navbar-list">
+                <ul>
+                    <li><a href="">خانه</a></li>
+                    <li><a href="">درباره ما</a></li>
+                    <li><a href="">تماس با ما</a></li>
+                    <li><a href="">ورود / ثبت نام </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navbar-mobile">
+            <div class="navbar-mobile-title">
+                <p class="h3">gorup <span>A</span></p>
+            </div>
+            <div class="navbar-mobile-list" id="open">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="swapper-menu" id="swapper">
+            <div class="close-menu" id="close">
+                <i class="fas fa-times fa-2x"></i>
+            </div>
+            <hr>
+            <ul>
+                <li><a href="">خانه</a></li>
+                <li><a href="">درباره ما</a></li>
+                <li><a href="">تماس با ما</a></li>
+                <li><a href="">ورود / ثبت نام </a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- ! end header -->
+
+
+
+    <!-- ! title -->
+    <div class="title">
+        <div class="title-image-big">
+            <div class="cart">
+                <img src="./assets/images/wp4923978-react-js-wallpapers.jpg" alt="">
+                <div class="cart-desc">
+                    <p class="cart-desc-title h5">چگونه فضا نورد شویم !!!</p>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="title-image-small">
+            <div class="box-one">
+                <div class="cart">
+                    <img src="./assets/images/wp4923981-react-js-wallpapers.jpg" alt="">
+                </div>
+            </div>
+            <div class="box-two">
+                <div class="cart">
+                    <img src="./assets/images/wp4924004-react-js-wallpapers.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ! title -->
+
+
+
+
+
+
+    <!-- ! jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- ! jquery -->
+    <!-- ! bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- ! bootstrap -->
+    <!-- ! font awesome -->
+    <script src="./assets/js/all.min.js"></script>
+    <!-- ! font awesome -->
+    <!-- ! owl carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- ! owl carousel  -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+
+    <script>
+        const open = document.getElementById("open");
+        const swapper = document.getElementById("swapper");
+        const close = document.getElementById("close");
+
+        open.addEventListener("click", () => {
+            swapper.style.display = "block"
+        })
+
+        close.addEventListener("click", () => {
+            swapper.style.display = "none"
+        })
+    </script>
+</body>
+
+</html>
